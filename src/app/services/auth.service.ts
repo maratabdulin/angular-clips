@@ -14,7 +14,7 @@ export class AuthService {
   ) { }
 
   public async createUser(userData: IUser) {
-    const userCred = await this.auth.createUserWithEmailAndPassword(
+    await this.auth.createUserWithEmailAndPassword(
       userData.email as string, userData.password as string
     )
     await this.db.collection('users').add({
