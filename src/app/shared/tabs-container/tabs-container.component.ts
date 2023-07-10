@@ -17,7 +17,6 @@ export class TabsContainerComponent implements AfterContentInit {
     if (!activeTabs || activeTabs.length === 0) {
       this.selectTab(this.tabs!.first)
     }
-    console.log(this.tabs)
   }
 
   selectTab(tab: TabComponent) {

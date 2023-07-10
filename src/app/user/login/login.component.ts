@@ -33,7 +33,6 @@ export class LoginComponent {
       this.inSubmission = false
       this.alertMessage = 'An unexpected error occurred. Please try again later'
       this.alertColor = 'red'
-      console.log(e)
       return
     }
     this.alertMessage = 'Success! You are now logged in'
