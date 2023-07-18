@@ -17,6 +17,4 @@ export class NavComponent {
     $event.preventDefault()
     this.modal.toggleModal('auth')
   }
-
-
 }
